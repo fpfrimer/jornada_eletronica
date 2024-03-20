@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evento</title>
+<style>
+  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+  header { background-color: #333; padding: 10px; color: white; text-align: center; }
+  nav { background: #222; padding: 0 20px; }
+  nav ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+  nav ul li { float: left; }
+  nav ul li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+  nav ul li a:hover { background-color: #ddd; color: black; }
+  section { padding: 20px; }
+  .news-feed { border: 1px solid #ccc; padding: 20px; }
+  footer { background-color: #333; color: white; text-align: center; padding: 10px; position: absolute; bottom: 0; width: 100%; }
+</style>
+<script>
+  function showEventDetails(eventId) {
+    // Aqui você pode adicionar uma função para mostrar detalhes do evento
+    console.log("Detalhes do evento", eventId);
+  }
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Imagem do logo</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#events">Eventos/Inscrição</a></li>
+    <li><a href="#calendar">Calendário</a></li>
+    <li><a href="#about">Sobre</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <div class="news-feed">
+    <h2>Feed de notícias</h2>
+    <!-- Conteúdo do feed de notícias -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Nome do Evento</p>
+</footer>
+
+</body>
+</html>
