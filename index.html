@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="figs/logo.png">
+
 <title>Evento</title>
 <style>
   body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
@@ -25,13 +27,14 @@
     console.log("Detalhes do evento", eventId);
   }
 </script>
+<script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
   <img src="figs/logo.png" alt="Logotipo">
   <!-- <img src="https://img.freepik.com/vetores-gratis/gradiente-de-ilustracao-de-passaro-colorido_343694-1741.jpg" alt="Logotipo"> -->
-  <h1>Jornada da Eletrônica</h1>
+  <h1 class="nome-do-evento"></h1>
 </header>
 
 
@@ -51,8 +54,23 @@
   </div>
 </section>
 
+<section id="events">
+    <h1>Eventos/Inscrição</h1>
+    <p>Informações sobre eventos e inscrição.</p>
+  </section>
+  
+  <section id="calendar">
+    <h1>Calendário</h1>
+    <p>Confira nosso calendário de eventos.</p>
+  </section>
+  
+  <section id="about">
+    <h1>Sobre</h1>
+    <p>Informações sobre nós.</p>
+  </section>
+
 <footer>
-  <p>&copy; 2024 Nome do Evento</p>
+  <p>&copy; 2024 <span class="nome-do-evento"></span></p>
 </footer>
 
 </body>
