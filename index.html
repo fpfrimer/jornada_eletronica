@@ -8,7 +8,8 @@
 
 <title>Evento</title>
 <style>
-  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+  html, body { height: 100%; margin: 0;}
+  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column;}
   header { background-color: #333; padding: 10px; color: white; text-align: center; }
   header img { width: 150px; height: 150px; margin-right: 10px; border: 1px solid #fff; /* Apenas para fins de diagnóstico */ }
   header h1 { font-family: 'Orbitron', sans-serif; margin: 0; }
@@ -19,7 +20,7 @@
   nav ul li a:hover { background-color: #ddd; color: black; }
   section { padding: 20px; }
   .news-feed { border: 1px solid #ccc; padding: 20px; }
-  footer { background-color: #333; color: white; text-align: center; padding: 10px; position: absolute; bottom: 0; width: 100%; }
+  footer { background-color: #333; color: white; text-align: center; padding: 10px; width: 100%; }
 </style>
 <script>
   function showEventDetails(eventId) {
@@ -30,45 +31,45 @@
 <script src="script.js" defer></script>
 </head>
 <body>
+<div class="content-wrapper">
+  <header>
+    <img src="figs/logo.png" alt="Logotipo">
+    <!-- <img src="https://img.freepik.com/vetores-gratis/gradiente-de-ilustracao-de-passaro-colorido_343694-1741.jpg" alt="Logotipo"> -->
+    <h1 class="nome-do-evento"></h1>
+  </header>
 
-<header>
-  <img src="figs/logo.png" alt="Logotipo">
-  <!-- <img src="https://img.freepik.com/vetores-gratis/gradiente-de-ilustracao-de-passaro-colorido_343694-1741.jpg" alt="Logotipo"> -->
-  <h1 class="nome-do-evento"></h1>
-</header>
 
+  <nav>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#events">Eventos/Inscrição</a></li>
+      <li><a href="#calendar">Calendário</a></li>
+      <li><a href="#about">Sobre</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <ul>
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#events">Eventos/Inscrição</a></li>
-    <li><a href="#calendar">Calendário</a></li>
-    <li><a href="#about">Sobre</a></li>
-  </ul>
-</nav>
-
-<section id="home">
-  <div class="news-feed">
-    <h2>Feed de notícias</h2>
-    <!-- Conteúdo do feed de notícias -->
-  </div>
-</section>
-
-<section id="events">
-    <h1>Eventos/Inscrição</h1>
-    <p>Informações sobre eventos e inscrição.</p>
-  </section>
-  
-  <section id="calendar">
-    <h1>Calendário</h1>
-    <p>Confira nosso calendário de eventos.</p>
-  </section>
-  
-  <section id="about">
-    <h1>Sobre</h1>
-    <p>Informações sobre nós.</p>
+  <section id="home">
+    <div class="news-feed">
+      <h2>Feed de notícias</h2>
+      <!-- Conteúdo do feed de notícias -->
+    </div>
   </section>
 
+  <section id="events">
+      <h1>Eventos/Inscrição</h1>
+      <p>Informações sobre eventos e inscrição.</p>
+    </section>
+    
+    <section id="calendar">
+      <h1>Calendário</h1>
+      <p>Confira nosso calendário de eventos.</p>
+    </section>
+    
+    <section id="about">
+      <h1>Sobre</h1>
+      <p>Informações sobre nós.</p>
+    </section>
+</div>
 <footer>
   <p>&copy; 2024 <span class="nome-do-evento"></span></p>
 </footer>
